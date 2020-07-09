@@ -26,28 +26,30 @@
             <li>A timer or counter will be needed to start and end the cooking process;</li>
             <li>Possibly a visible/audible signal during the timer the hotdog electrodes are powered might be interesting and useful;</li>
             <li>Finally, a hotdog odometer to track the total number of hotdogs cooked would be interesting.</li>
-         </ul>  
-              
-
-        <img src=".jpg" class="img-responsive margin" style="width:100%" alt="Program">
+         </ul>
+        <br>
+        
+        <p>Here is the beta version block programming for the hotdog cooker.</p>
+        <img src="block_program.jpg" class="img-responsive margin" style="width:100%" alt="Program">
 
         <p> Return to my <a href='../index.html'>home page</a>. </p>
       </div >
      
       <div class="col-md-4">
-        <p> Arduino circuit to control a stepper motor that will open and close the cooking chamber. This will turn a lenght of 3/8-16 threaded rod that will act 
-          as a linear actuator.</p> 
+        <p> Arduino circuit: to control a servo motor that will close the cooking chamber. This will turn a lenght of 3/8-16 threaded rod that will act 
+          as a linear actuator. After the cover is closed the solid state relay is pulsed to control the 120vac to the cooker nails. Two switches control
+          four possible cooking intensities. Then the sevro motor opens the chamber and a tone is sounded.</p> 
    
-        <img src=".jpg" class="img-responsive margin" style="width:100%" alt="Linear Actuator">
+        <img src="arduino_cooker.jpg" class="img-responsive margin" style="width:100%" alt="Arduino">
       </div>
 
       <div class="col-md-4">
-        <p> Possible timing circuit: </p> 
+        <p> Text of the Arduino code: </p> 
         
-        <img src=".jpg" class="img-responsive margin" style="width:100%" alt="Timer">
+        <img src="text_program.jpg" class="img-responsive margin" style="width:100%" alt="Text Code">
       </div>
       <div class="col-md-4">
-        <p> The operation of the solid state relay: </p>
+        <p> The operation of the solid state relay with the "blink" program: </p>
          <video controls>
           <source width="320" height="240" src="ssr_blink.MOV" type="video/mp4">
         </video>
