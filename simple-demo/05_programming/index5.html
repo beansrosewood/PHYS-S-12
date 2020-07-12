@@ -30,7 +30,15 @@
         <br>
         
         <p>Here is the beta version block programming for the hotdog cooker:  (I do see a few mistakes that need to be corrected. I will put the rev 2 code in 
-           the tab for the next class.)</p>
+           the tab for the next class.) The latest revision for the Arduino code is rev3, and it can be seen in the tab for class six--3-D printing. I did have a 
+        few bugs in the code, and a few type ohs in the comments. </p>
+        <p>      I do like the block programming option in TinkerCAD better for the Arduino, but is does appear to be a little limited compared to the text. This 
+          present a problem for the stepper motor I plan to use to open and close the safety cover of the hotdog cooker. I do not see a stepper motor in the 
+          TinkerCAD components so I do not have a way to write the stepper motor part of the program with block code. Tinker CAD does have an L293D (h-bridge) that 
+          supported by block code, so that may be an option. The simulation in TinkerCAD ran very well. I believe everything worked correctly. I did a quick bread 
+          board simulation on the bench and all seemed to be well. I do want to replace the "cycle start switch" (which is a two position slide switch) in my circuit 
+          with a momentary contact push button. The slide switch causes the program to run cycle after cycle until the switch is moved back to "low". The momentary 
+          contact will run one cycle when pushed stopping when complete (I think!).
         <img src="block_program.jpg" class="img-responsive margin" style="width:100%" alt="Program">
 
         <p> Return to my <a href='../index.html'>home page</a>. </p>
@@ -56,6 +64,9 @@
       </div>
       <div class="col-md-4">
         <p> The operation of the solid state relay with the "blink" program: </p>
+        <p>   I did this little experiment just to be sure the 3.3vdc output of pin 13 on the Arduino would be sufficient to activate the solid state relay. 
+          The ssr has an input range of 3-32vdc. Pin 13's output is on the extreme low end of the ssr's range, but everything seemed to work fine. </p>
+          
          <video controls>
           <source width="320" height="240" src="ssr_blink.MOV" type="video/mp4">
         </video>
