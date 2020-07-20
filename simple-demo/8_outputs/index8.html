@@ -16,29 +16,55 @@
   <div class="row">
     
       <div class="col-md-4">
-        <p> I got this again, Pikachu! </p>
+        <p> This weekend I fabricated and assembled the structure of the  two-nail hotdog cooker. Since this week's assignment was to use an output device
+        I connected a stepper motor to open and close the hotdog chamber cover.</p>
 
-        <img src="DSC_0426.jpg" class="img-responsive margin" style="width:100%" alt="Steve & Lilly">
+        <img src="cooker_assembly.JPG" class="img-responsive margin" style="width:100%" alt="Cooker Assembly">
 
         <p> Return to my <a href='../index.html'>home page</a>. </p>
       </div >
      
       <div class="col-md-4">
-        <p> Here I am with my wife, Sally: </p> 
+        <h4> Here are some photos of the cooker fabrication progress: </h4> 
    
-        <img src="IMG_1880 (1).jpg" class="img-responsive margin" style="width:100%" alt="Sally & Steve">
+        <img src="cooker_geometry.JPG" class="img-responsive margin" style="width:100%" alt="Cooker cover engineering">
+        <p> Hotdog engineering! </p>
+        <br>
+        <img src="half_pipe.JPG" class="img-responsive margin" style="width:100%" alt="Cover cut on table saw">
+        <p> Cutting an acrylic tube thing in half on the table saw for the cooker safety cover. </p>
       </div>
 
       <div class="col-md-4">
-        <p> This is my son, Joe: </p> 
+        <h4> Some more fab pictures: </h4> 
         
-        <img src="IMG_3862.jpg" class="img-responsive margin" style="width:100%" alt="Joe">
+        <img src="cooker_chassis.JPG" class="img-responsive margin" style="width:100%" alt="Plywood assembly">
+        <p> The chassis is constructed of my favorite building material: 3/4" baltic birch plywood (I like the look of the multi-core edge). </p> 
+        <br>
+        <img src="cooker_side.JPG" class="img-responsive margin" style="width:100%" alt="Side view">
+        <p> This is a side view of the "stepper motor driven linear-to-rotational" actuator. </p>
+        <br>
+        <img src="counter_wt.JPG" class="img-responsive margin" style="width:100%" alt="Cover counter weight">
+        <p> I had to add a half-circle shaped counter weight in order to get the stepper motor to smoothly move the cover thru its full range of motion. </p>
+        <br>
       </div>
       <div class="col-md-4">
-        <p> Final Project: Hotdog cooker in action. </p>
+        <h4> Below is a high speed video of the hotdog chamber safety cover opening and closing: </h4>
          <video controls>
-          <source width="320" height="240" src="hotdog.mp4" type="video/mp4">
+          <source width="320" height="240" src="hotdog2.mp4" type="video/mp4">
         </video>
+        <p> Notice the micro switch that is engaged when the cover reaches the closed/safe position. This switch will only allow 120 volts at the solid state relay
+          and nails when the cover is closed. </p>
+        
+      <div class="col-md-4">
+        <h4> Random pictures from the weekend: </h4>
+          <img src="32_revolution_program.png" class="img-responsive margin" style="width:100%" alt="Arduino Program">
+          <p> Here is a screen shot of the Arduino program I used to open and close the cover. It turns the threaded rod 32 revolutions; that is about 2 inches. I 
+            plan to cut this program in half (open program and close program), then replace the current servo motor code in my main hotdog cooker code with these 
+            stepper motor control codes. I may have to move some pin assignments around. The stepper uses 4 outputs, and the servo only is currently using one.</p>
+        <br>
+          <img src="ssr_mount.JPG" class="img-responsive margin" style="width:100%" alt="Solid state relay window">
+          <p> The solid state relay (120vac) is mounted behind acrylic for safety, yet the LED is still visible. </p>
+      </div>
 
   </div>
 
