@@ -20,13 +20,15 @@
 	<script>
 	// Your web app's Firebase configuration
 	var firebaseConfig = {
-		apiKey: "AlzaSyA8EO2xtpr3iAbx7XiDjulYX8SpWXcyMRc",
-		authDomain: "REPLACE_WITH_YOUR_OWN",
-		databaseURL: "REPLACE_WITH_YOUR_OWN",
-		projectId: "esp32-led-e2907",
-		storageBucket: "REPLACE_WITH_YOUR_OWN",
-		messagingSenderId: "REPLACE_WITH_YOUR_OWN",
-		appId: "1:535245109987:web:7f306d24632a93b32fa3d6"
+    		apiKey: "AIzaSyA8E02xtpr3iAbx7XiDjulYX8SpWXcyMRc",
+    		authDomain: "esp32-led-e2907.firebaseapp.com",
+    		databaseURL: "https://esp32-led-e2907.firebaseio.com",
+    		projectId: "esp32-led-e2907",
+    		storageBucket: "esp32-led-e2907.appspot.com",
+    		messagingSenderId: "535245109987",
+    		appId: "1:535245109987:web:7f306d24632a93b32fa3d6",
+    		measurementId: "G-185LGYYW8W"		
+		
 	};
 	
 	// Initialize Firebase
