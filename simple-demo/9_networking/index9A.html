@@ -47,6 +47,9 @@
 		ref.update({
 			"LED_STATUS": "ON"
 		});
+		try{
+			Thread.sleep.(5000);
+		}catch(Interrupted Exception ie){ie.printStackTrace();}
 		console.log("turning off");
 		ref.update({
 			"LED_STATUS": "OFF"
