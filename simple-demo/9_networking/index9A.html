@@ -57,8 +57,8 @@
 	
 	<h3>Current Dog Temperature</h3>
 	<div class="slidercontainer">
-	<output type="range" min=0 max=400 value=70 class="slider" id="dog_temperature" oninput="sliderchange(temperature)">
-	<input id="dog_temperature"></input>
+	<input type="range" min=0 max=400 value=70 class="slider" id="dog_temperature" oninput="sliderchange(this.value)">
+	<output id="dog_temperature"></input>
 	</div>
 	
 	
