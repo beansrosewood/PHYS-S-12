@@ -91,7 +91,7 @@
 					     
 	//Added the lines below to get the hotdog temperature from the database.
 	var tempRef = firebase().ref('/dog_temperature');
-	tempRef.on('value', function((snapshot) {
+	tempRef.on('value', function(snapshot) {
 	document.getElementById('dog_temperature').innerHTML = snapshot.val();
 	});
 
