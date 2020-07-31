@@ -57,7 +57,7 @@
 	
 	<h3>Current Dog Temperature</h3>
 	<div class="slidercontainer">
-	<input type="range" min=0 max=400 value=70 class="slider" id="dog_temperature" oninput="sliderchange(this.value)">
+	<input type="range" min=0 max=400 value=70 class="slider" id="dog_temperature">
 	<output id="dog_temperature"></output>
 	</div>
 	
@@ -88,6 +88,12 @@
 
 	// Get a database reference to our blog
 	var ref = firebase.database().ref("/");
+					     
+	//Added the lines below to get the hotdog temperature from the database.
+	var tempRef = firebase().ref('/dog_temperature');
+	tempRef.on('value', function((snapshot) {
+	document.getElementById('dog_temperature').innerHTML = snapshot.val();
+	});
 
 	// make the buttons call the function below 
 	document.getElementById('turn-on').addEventListener('click', turnOn, false);
