@@ -93,7 +93,7 @@
 	var tempRef = firebase.database().ref('/dog_temperature');
 	tempRef.on('value', function(snapshot) {
 	document.getElementById('dog_temperature').innerHTML = snapshot.val();
-	document.getElementById('hot_dog_bar').value = snapshot.val();	
+	document.getElementById('hot_dog_bar').value = parseInt(snapshot.val());	
 	});
 
 	// make the buttons call the function below 
