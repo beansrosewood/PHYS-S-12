@@ -51,17 +51,38 @@
      
       <div class="col-md-4">
         <p> Shown below are photos of the project's progress: </p> 
-   
-        <img src="cooker_chassis.JPG" class="img-responsive margin" style="width:100%" alt="Chassis"> 
+        <br>
+        <p> The cooker chassis is constructed of 3/4" Baltic Birch multi-core plywood, and has a polyurethane finish. </p>
+        <img src="cooker_chassis.JPG" class="img-responsive margin" style="width:100%" alt="Chassis">
+        <br>
+        <p> The safety cover is made from half of an acrylic "display case", and is opened and closed by one of two stepper motors that drive a length of 3/8-16 
+          threaded rod. The cover stepper motor runs at 60rpm. I had to add the semi-circular plywood counterweight so that the stepper had enough torque
+          to open and close the cover. The microswitch closes when the safety cover is closed sending 120vac to the solid-state relay. </p>
         <img src="cooker_assembly.JPG" class="img-responsive margin" style="width:100%" alt="Assembly">
+        <br>
+        <p> The two-condiment squirter head is moved back and forth over the hotdog by the second stepper motor. This motor runs at 90rpm, and is driving a 
+          1/2-12 threaded rod. </p>
+        <img src="squirt_motor.JPG" class="img-responsive margin" style="width:100%" alt="squirt rod">
+        <br>
+        <p> Pictured below are the two H-bridge drivers connected to the stepper motors and the Arduino Metro board for testing of the motor system. </p>
         <img src="2stepper_hookup.JPG" class="img-responsive margin" style="width:100%" alt="2 Stepper">
+        <br>
+        <p> The "two-condiment" squirt head is made from a heavy 1/2-12 nut super-glued to two 1/2" x 2" washers. I then drilled the washers and squeezed the 
+          assembly together with two 6-32 bolts w/nuts for extra strength and this created an attachment point for the two 1/4" nylon tubes that the mustard 
+          and ketchup flow through. The tubes ride on the edge of the acrylic cover to maintain the correct orientation as the 1/2" rod is spinning. </p>
         <img src="squirt_head.JPG" class="img-responsive margin" style="width:100%" alt="squirt head">
+        <br>
+        <p> A few weeks into the hotdog cooker project I realized my project did not have any type of sensor (as required) so I decided to experiment with a 
+          possible thermocouple to read the hotdog temperature while cooking. (below is a sketch of the possible circuit) The t-couple circuit uses an ice bath 
+          as a reference to create a very small current (approx 1.2 millivolts) at room temperature.
         <img src="esp_tc_sketch.JPG" class="img-responsive margin" style="width:100%" alt="esp tc">
         
       </div>
     
       <div class="col-md-4">
-        <p> Here are photos of the hotdog cooker on "video day" in my backyard: </p> 
+        <h3> Here are photos of the hotdog cooker on "video day" in my backyard: </h3> 
+        <br>
+        <p>The cooker chassis is constructed of 3/4" Baltic Birch multi-core plywood, and has a polyurethane finish. </p>
         <img src="panel.JPG" class="img-responsive margin" style="width:100%" alt="Panel">
         <img src="rear.JPG" class="img-responsive margin" style="width:100%" alt="Rear">
         <img src="km.JPG" class="img-responsive margin" style="width:100%" alt="km">
