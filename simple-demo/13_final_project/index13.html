@@ -148,15 +148,15 @@
         leds. The switch behind the red led does not have a function at this time. I had planned to adjust the code to have one switch for mustard and one for
         ketchup, but did not get to make that modification. With the current Metro and Huzzah codes the condiment options are: mustard and ketchup or just 
         mustard(as shown on the label). The "SSR ON" led is lit when 120vac is being sent to the nails. "CYCLE ACTIVATED" led lights when the "START!" button is 
-        pressed or the web app calls for a cycle start. The "STAART!" button is all the way to the left. The buzzer plays a tone on completion of a hotdog cycle.</p>
+        pressed or the web app calls for a cycle start. The "START!" button is all the way to the left. The buzzer plays a tone on completion of a hotdog cycle.</p>
         <img src="panel.JPG" class="img-responsive margin" style="width:100%" alt="Panel">
         <br>
         <p>The photo below is of the rear of the hotdog project. Behind the breadboard from left to right the following are visible: </p>
         <ul>
           <li>Arduino Metro board;</li>
           <li>"Dog temperature" display(reads a second thermocouple inside the 120vac ground electrode;</li>
-          <li>Pre-amp to amplify the very small millivolt output from the thermocouple and sent that amplified signal to pin A2 of the Metro board;</li>
-          <li>Thermocouple connections. This tc actually has two tc in the probe. one connected to the water bath/pre-amp and the other to the display;</li>
+          <li>Pre-amp to amplify the very small millivolt output from the thermocouple and send that amplified signal to pin A2 of the Metro board;</li>
+          <li>Thermocouple connections. This tc actually has two tc's in the probe. one connected to the water bath/pre-amp and the other to the display;</li>
           <li>Condiment relays which take 3.3vdc inputs from the Metro board to switch 12vdc to the ketchup and mustard solinoid valves.
         </ul>    
         <img src="rear.JPG" class="img-responsive margin" style="width:100%" alt="Rear">
@@ -207,7 +207,7 @@
          <img src="take_me.jpg" class="img-responsive margin" style="width:100%" alt="Tune">
          <br><br>
          <h3>Web App/FireBase:</h3>
-         <p> I would really like to get the "hotdog odometer" function working! I tried a few things, and my have made some progress. However, the odometer 
+         <p> I would really like to get the "hotdog odometer" function working! I tried a few things, and may have made some progress. However, the odometer 
            is not operational yet. </p>
          <h3> Stay Tuned!! </h3>
     </div>    
@@ -223,10 +223,12 @@
           <li>get the stepper motors to run faster (possibly a different stepper library??);</li>
           <li>consolidate all elements onto a single chassis;</li>
           <li>use solid-state relays to activate the condiment solinoids(rather than the multi-state isolation relays);</li>
+          <li>some of the indicator LEDs could use resistors to reduce the voltage across them;</li>
+          <li>a real front control panel with larger switches(current switches are microscopic--they looked bigger on the internet);</li>
           <li>install a shield so ketchup/mustard doesn't occasionally drip on the Huzzah when the cover is closed;</li>
           <li>many request for relish, chopped onions, and sauerkraut!</li>
           <li>invent "edible LEDs"!!;
-          <li>ultimate impovement: robot gripper to load and unload the hotdogs/buns!;</li>
+          <li>ultimate impovement: robot gripper to load and unload the hotdogs/buns!</li>
         </ul>  
         </div>  
       <div class="col-md-4">
