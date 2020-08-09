@@ -16,8 +16,10 @@
   <div class="row">
     
       <div class="col-md-4">
-        <p> I had a lot of unexpected trouble getting the huzzah to read the thermocouple output. The output is only 1.2-1.5 millivolts at room temperature.
-        I tried several amp options including: building an amp with a transistor; using an LM386 amp chip; and finally resorted to using a pre-amp that I 
+        <p> I had a lot of unexpected trouble getting the huzzah to read the thermocouple output. The output is only 1.2-1.5 millivolts at room temperature, and as 
+          I learned through experimentation (and Prof Hart pointed out to me in some Adafruit documentation) The Adafruit ESP32 Feather board we are using has 
+          an analog input threshold of about 100 millivolts. Therefore, the board has a very inconsistant reading at the A2 pin until at least 100 millivolts are 
+          present. I tried several amp options including: building an amp with a transistor; using an LM386 amp chip; and finally resorted to using a pre-amp that I 
         had from a control system I use to work on frequently. The problem with the pre-amp is that it requires a 24vdc input voltage. Therefore, I had to 
         incorporate the "complete" control mother board to get the correct voltage to the pre-amp. Photo below is the pre-amp.</p>
         
@@ -36,7 +38,7 @@
       </div>
 
       <div class="col-md-4">
-        <p> Amplifier from a 2N3904 transistor that did not help: </p>
+        <p> Amplifier constructed using a 2N3904 transistor that did provide enough gain to correct the problem: </p>
         <p>I built this voltage amp with a gain of 10, and also 20, but they did not appear to help. I attemped a gain of 100, but "noise" was extreme.(Gain 
         is determined by the ratio of the collector and emitter resistors.)</p>
         
